@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    
+    background-image: url('bg3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98vh;
+    background-position: center;
+
+    /* background-color: black; */
+}
+
+.contain {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;        
+    align-content: center;
+    
+}
+
+.key {
+    height: 80px;
+    width: 6%;
+
+    align-items: center;
+    margin-left: 2%;
+    background: transparent;
+    border: 5px solid black;
+    box-shadow: 5px 6px 10px black;
+    color: wheat;
+    font-size: 40px;
+    transition: 0.07s;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.key .sound {
+    font-size: 9px;
+    position: relative;
+    bottom: -30px;
+    left: -30%;
+    color: rgb(199, 151, 5);
+    align-items: center;
+    text-align: center;
+
+}
+
+kbd {
+    padding-left: 35%;
+
+}
+
+.playing {
+    border: 3px solid rgb(199, 151, 5);
+    transform: scale(1.1);
+}
+
+.key:hover {
+    border: 3px solid rgb(199, 151, 5);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        background-position: 70%;
+    }
+
+   
+
+    .key {
+        width: 9%;
+        margin-top: 3%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+   
+
+    .key {
+        width: 17%;
+        /* margin-top: 5%; */
+        
+    }
+}
